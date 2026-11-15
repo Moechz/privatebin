@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "privatebindocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[zh-cn]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin 是自建的零知识加密粘贴板：浏览器先加密再上传，服务器只保存密文；粘贴可以按时限或阅读次数过期，支持可选密码与讨论。存储就是应用数据目录里的本地文件。"
+release_note = "1. 首个版本：基于 Docker Hub 的 PrivateBin 2.1.1，以非 root 容器运行。零知识加密粘贴板，支持过期与讨论；存储保存在应用数据目录。"
+important    = "需要 DockerEngine（缺失时应用中心会自动安装）。粘贴文本后把生成的链接分享出去即可；解密密钥保存在链接的片段里，服务器看不到明文。粘贴内容与配置保存在 DockerAppData/privatebindocker/data。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。"
+
+[zh-hk]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin 是自建的零知識加密貼上板：瀏覽器先加密再上傳，伺服器只保存密文；貼上可以按時限或閱讀次數過期，支援可選密碼與討論。儲存就是應用資料目錄裡的本機檔案。"
+release_note = "1. 首個版本：基於 Docker Hub 的 PrivateBin 2.1.1，以非 root 容器運行。零知識加密貼上板，支援過期與討論；儲存保存在應用資料目錄。"
+important    = "需要 DockerEngine（缺少時應用中心會自動安裝）。貼上文字後把產生的連結分享出去即可；解密密鑰保存在連結的片段裡，伺服器看不到明文。貼上內容與設定保存在 DockerAppData/privatebindocker/data。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。"
+
+[fr-fr]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[de-de]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[it-it]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[es-es]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[hu-hu]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ja-jp]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ko-kr]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pl-pl]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ru-ru]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[tr-tr]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pt-pt]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ar-sa]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[cs-cz]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[he-il]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[id-id]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nb-no]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nl-nl]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[sv-se]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[th-th]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[vi-vn]
+name         = "PrivateBin"
+auth         = "PrivateBin"
+version      = "@@VERSION@@"
+descript     = "PrivateBin is a self-hosted pastebin with zero-knowledge encryption: the browser encrypts the text before it is uploaded, so the server only stores ciphertext, and pastes can expire after a time or after a number of reads, with optional passwords and discussions. Storage is local files in the application data folder."
+release_note = "1. First release: PrivateBin 2.1.1 from Docker Hub as a non-root container. Zero-knowledge encrypted pastes with expiry and discussions; storage in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Paste text and share the generated link; the decryption key stays in the link fragment, so the server never sees plaintext. Pastes and the configuration live in DockerAppData/privatebindocker/data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
