@@ -10,6 +10,8 @@
 # Volumes : all persistent data lives below
 #           /Volume1/DockerAppData/privatebindocker/. The /Volume* wildcard is
 #           deliberately NOT used: the platform does not expand it.
+#           data/ holds the encrypted pastes; cfg/ is where an optional
+#           conf.php goes (limits, retention, storage backend).
 # TOS rules honoured: Docker Hub image with a fixed tag (never ':latest'),
 #           container_name == application id, restart: unless-stopped,
 #           non-root user, no privileged mode, no network_mode: host, no
@@ -43,12 +45,19 @@ services:
       TZ: "Asia/Shanghai"
     volumes:
       - /Volume1/DockerAppData/privatebindocker/data:/srv/data
+      - /Volume1/DockerAppData/privatebindocker/cfg:/srv/cfg
     healthcheck:
       test: ["CMD-SHELL", "grep -q ':1F90' /proc/net/tcp6 || grep -q ':1F90' /proc/net/tcp"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 45s
+    stop_grace_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 # TOS App Center web metadata (must be the last block of the file):
 # web.port is the published host port above, protocol is http.
